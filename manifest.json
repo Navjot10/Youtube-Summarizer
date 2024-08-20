@@ -9,12 +9,12 @@
     "storage" 
   ],
   "background": {
-    "service_worker": "src/background.js"
+    "service_worker": "background.js"
   },
   "content_scripts": [
     {
       "matches": ["*://*.youtube.com/*"],
-      "js": ["src/content.js"]
+      "js": ["content.js"]
     }
   ],
   "action": {
