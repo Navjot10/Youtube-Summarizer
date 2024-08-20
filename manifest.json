@@ -1,0 +1,23 @@
+{
+  "manifest_version": 3,
+  "name": "YouTube Transcript Fetcher",
+  "description": "Fetches and displays YouTube transcripts on thumbnail hover",
+  "version": "1.0",
+  "permissions": [
+    "activeTab",
+    "scripting",
+    "storage" 
+  ],
+  "background": {
+    "service_worker": "src/background.js"
+  },
+  "content_scripts": [
+    {
+      "matches": ["*://*.youtube.com/*"],
+      "js": ["src/content.js"]
+    }
+  ],
+  "action": {
+    "default_popup": "popup.html"
+  }
+}

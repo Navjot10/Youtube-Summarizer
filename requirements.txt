@@ -1,0 +1,6 @@
+Flask
+flask-cors
+gunicorn
+openai
+youtube_transcript_api
+requests
